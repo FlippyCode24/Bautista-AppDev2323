@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %} Polygons {% endblock %}
+{% block content %}
+<style>
+    .Shapes {  
+        display: grid;
+        grid-template-columns: 60px 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+    ". .";
+}
+
+
+</style>
+<h1>Shapes Hub</h1>
+<br>
+<div class="Shapes">
+    <h1>🍕</h1>
+    <div>
+        <h1>Triangle</h1>
+        <p>
+            <strong>Fact:</strong>
+            Did you know that the sum of the interior angles of any triangle always equals 180 degrees? This is known as the Triangle Angle Sum Theorem.
+        </p>
+    </div>
+</div>
+
+<div class="Shapes">
+    <h1>🔳</h1>
+    <div>
+        <h1>Square</h1>
+        <p><strong>Fact:</strong>
+            Squares have four lines of symmetry. 
+            That means you can fold a square in four different ways and get two halves that match exactly. 
+            You can fold a square along its diagonals, which are the lines that connect opposite corners, or along its midlines, which are the lines that cut the square in half horizontally or vertically.
+
+        </p>
+    </div>
+</div>
+
+<div class="Shapes">
+    <h1>⭕</h1>
+    <div>
+        <h1>Circle</h1>
+        <p><strong>Fact:</strong>
+            The ratio of a circle’s circumference (the distance around it) to its diameter (the longest distance across it) is a special number called pi, which is about 3.14. 
+            You can use pi to find the area and circumference of any circle.</p>
+    </div>
+    
+</div>
+
+{% endblock %}
